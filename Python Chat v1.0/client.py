@@ -13,7 +13,7 @@ tappost = True
 
 client_color = random.choice(colors)
 
-SERVER_HOST = "151.33.121.47"
+SERVER_HOST = "0.0.0.0"
 SERVER_PORT = 5002
 separator_token = "<SEP>"
 
