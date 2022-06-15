@@ -2,7 +2,7 @@ import socket
 import time
 from threading import Thread
 
-SERVER_HOST = "192.168.1.101"
+SERVER_HOST = "0.0.0.0"
 SERVER_PORT = 5002
 separator_token = "<SEP>"
 counter = 0
