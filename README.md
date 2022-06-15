@@ -1,5 +1,6 @@
 # PythonChat
-Una chat creata in Python versione 1.0
 
-Per utilizzarla basterà usare il server.py come server (modificando ovviamente la stringa SERVER_HOST con l'ip che si desidera) e poi con il client.py
-(sempre modificando ip) ci si potrà connettere!
+A chat created in Python version 1.0
+
+To use it, just use the server.py as server (obviously modifying the SERVER_HOST string with the ip you want) and then with the client.py
+(always modifying ip) you can connect!
