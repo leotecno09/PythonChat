@@ -17,7 +17,7 @@ SERVER_HOST = "0.0.0.0"
 SERVER_PORT = 5002
 separator_token = "<SEP>"
 
-name = input("Inserisci il tuo nickname: ")
+name = input("Insert your nickname: ")
 name_shared = name
 #msg_identificazione = f"xxx:{name}\n"
 s = socket.socket()
@@ -25,16 +25,16 @@ print (f"[*] Connessione a {SERVER_HOST}:{SERVER_PORT}...")
 try:
     s.connect((SERVER_HOST, SERVER_PORT))
 except ConnectionRefusedError:
-    print (error_prefix, "Connessione rifiutata dal Server. (ConnectionRefusedError)")
+    print (error_prefix, "Connection refused by the Server. (ConnectionRefusedError)")
     tappost = False
 except TimeoutError:
-    print (error_prefix, "Impossibile localizzare il Server. (TimeoutError)")
+    print (error_prefix, "Unable to locate the Server. (TimeoutError)")
     tappost = False
 #s.send(msg_identificazione.encode())
 if tappost == True:
-    print ("[+] Connesso")
+    print ("[+] Connected")
 if tappost == False:
-    print("\n[-] Connessione terminata.")
+    print("\n[-] Connection terminated.")
     quit()
 #message = s.recv(1024).decode()
 #print("\n" + message)
@@ -49,10 +49,10 @@ def listen_for_messages():
             #name_shared = s.recv(1024).decode()
             print("\n" + message)
     except ConnectionResetError:
-        print(error_prefix, "Connessione interrotta dal Server. (ConnectionResetError)")
+        print(error_prefix, "Connection closed by the Server. (ConnectionResetError)")
         tappost = False
     except ConnectionAbortedError:
-        print("[-] Connessione Terminata.")
+        print("[-] Connection terminated.")
 
 
 listen_thread = threading.Thread(target=listen_for_messages)
