@@ -21,7 +21,7 @@ name = input("Insert your nickname: ")
 name_shared = name
 #msg_identificazione = f"xxx:{name}\n"
 s = socket.socket()
-print (f"[*] Connessione a {SERVER_HOST}:{SERVER_PORT}...")
+print (f"[*] Trying connection at {SERVER_HOST}:{SERVER_PORT}...")
 try:
     s.connect((SERVER_HOST, SERVER_PORT))
 except ConnectionRefusedError:
