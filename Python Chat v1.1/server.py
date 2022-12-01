@@ -58,7 +58,7 @@ def listen_for_client(cs):
 			log.write(current_time + f" {client_address} " + msg + "\n")
 			#time.sleep(2)
 			log.close()
-
+# THIS WORKS ONLY FOR WINDOWS!
 def on_exit(signal_type):
 	exiting = str(input("Are you sure to close the server? (y/n) "))
 	if exiting == "y" or exiting == "Y":
