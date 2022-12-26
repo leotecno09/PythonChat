@@ -55,13 +55,13 @@ if option == 2:
 
     print ("Done! Generating the chat.")
     os.startfile('.\data\server_localhost.py')
-    print ("Chat generated - server started!")
+    print ("[+] Chat generated - server started!")
     ngroktunnel = ngrok.connect(5002, "tcp")
     #tunnels = ngrok.get_tunnels()
     print ("Here's your", ngroktunnel)
     SERVER_HOST = "localhost"
     SERVER_PORT = 5002
-    print ("Connecting you automatically to the chat generated.")
+    print ("[+] Connecting you automatically to the chat generated.")
 if option == 3:
     ip = str(input("Insert the chat IP: "))
     port = int(input("Insert the chat port (if not specified put 5002): "))
