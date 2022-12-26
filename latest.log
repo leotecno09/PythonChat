@@ -1,0 +1,9 @@
+[INFO] Recompiled the log on: 2022-12-26
+[INFO] Now listening.
+[INFO] Please note that the seconds writed in the log are not accurated! (We're working on it!)
+10:58:46 ('127.0.0.1', 3815) connected to the server.
+10:58:47 ('127.0.0.1', 3815) <1> ciaoo
+
+10:58:50 There was an error [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+10:58:50 There was an error [WinError 10054] Connessione in corso interrotta forzatamente dall'host remoto
+10:58:46 Server closed!
