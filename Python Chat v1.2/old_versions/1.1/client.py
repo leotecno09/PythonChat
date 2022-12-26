@@ -4,8 +4,6 @@ from threading import *
 import threading
 from datetime import datetime
 from colorama import Fore, init, Back
-import sys
-import signal
 
 
 init()
@@ -17,7 +15,7 @@ tappost = True
 
 client_color = random.choice(colors)
 
-SERVER_HOST = "192.168.1.101"
+SERVER_HOST = "0.0.0.0"
 SERVER_PORT = 5002
 separator_token = "<SEP>"
 
@@ -60,9 +58,6 @@ def listen_for_messages():
         tappost = False
     except ConnectionAbortedError:
         print("[-] Connection terminated.")
-
-def signal_handler(signal, frame):
-    print ("You pressed CTRL+C, to quit please write q.")
 
 listen_thread = threading.Thread(target=listen_for_messages)
 #listen_thread.daemon = True
