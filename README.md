@@ -1,8 +1,11 @@
 # PythonChat
 
-A chat created in Python version 1.1
+A chat created in Python version 1.2
 
-To use it, just use the server.py as server (obviously modifying the SERVER_HOST string with the ip you want) and then with the client.py
-(always modifying ip) you can connect!
+To use it you have to open "run.cmd" (making sure you have Python3 and Pip3 installed), next you have 3 options:
 
-The version 1.1 comprehends a logging system for the server and a color usernames system for the client.
+1) Starting a local chat
+2) Starting a public chat (with Ngrok)
+3) Connecting to a public chat
+
+
