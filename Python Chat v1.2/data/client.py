@@ -56,6 +56,7 @@ if option == 2:
     print ("Done! Generating the chat.")
     os.startfile('.\data\server_localhost.py')
     print ("[+] Chat generated - server started!")
+    print ("[!] If you close this window, the Ngrok tunnel will break! ")
     ngroktunnel = ngrok.connect(5002, "tcp")
     #tunnels = ngrok.get_tunnels()
     print ("Here's your", ngroktunnel)
