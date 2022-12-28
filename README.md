@@ -8,4 +8,6 @@ To use it you have to open "run.cmd" (making sure you have Python3 and Pip3 inst
 2) Starting a public chat (with Ngrok)
 3) Connecting to a public chat
 
+WARNING: Now it's work only for Windows!
+
 
